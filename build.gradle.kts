@@ -22,9 +22,8 @@ repositories {
     mavenCentral()
 }
 
-tasks.create("stage") {
-    dependsOn("clean", "InstallDist")
-}
+tasks.create("stage").dependsOn("installDist")
+
 
 dependencies {
 //    implementation("io.ktor:ktor-content-negotiation-jvm:$ktorVersion")
