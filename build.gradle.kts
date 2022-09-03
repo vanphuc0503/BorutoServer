@@ -23,7 +23,7 @@ repositories {
 }
 
 tasks.create("stage") {
-    dependsOn("InstallDist")
+    dependsOn("clean", "InstallDist")
 }
 
 dependencies {
